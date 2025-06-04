@@ -1,0 +1,1600 @@
+{
+    "satellites": [
+        {
+            "name": "sat1",
+            "memory_capacity": 2945,
+            "available_memory": 2945,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,0,0,0,0,0,0,7,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,5,0,0,0,0,0,
+                0,0,4,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,3,0,0,0,0,8,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0                                      
+            ],
+            "coalition_table": {
+                "satellite": "sat1",
+                "preferences": [
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 5
+                    }
+                ]            
+            }
+        },
+        {
+            "name": "sat2",
+            "memory_capacity": 2042,
+            "available_memory": 2042,
+            "accumulated_reward": 0,            
+            "availability_matrix": [
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,9,0,0,0,0,0,
+                0,0,0,0,3,0,6,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                10,0,0,0,0,0,0,0,
+                0,4,0,0,0,0,0,0               
+            ],
+            "coalition_table": {
+                "satellite": "sat2",
+                "preferences": [
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 6,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 6,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 4
+                    }                    
+                ]            
+            }
+        },
+        {
+            "name": "sat3",
+            "memory_capacity": 1417,
+            "available_memory": 1417,
+            "accumulated_reward": 0,            
+            "availability_matrix": [
+                0,0,0,0,2,0,0,7,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,4,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,8,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,1,10,0,6,
+                0,0,0,0,0,0,0,0           
+            ],
+            "coalition_table": {
+                "satellite": "sat3",
+                "preferences": [
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 6,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 5
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 4
+                    }                    
+                ]            
+            }
+        },
+        {
+            "name": "sat4",
+            "memory_capacity": 1095,
+            "available_memory": 1095,
+            "accumulated_reward": 0,            
+            "availability_matrix": [
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,8,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,10,0,0,0,0,2,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,5,
+                1,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,4,
+                0,0,0,0,0,0,0,0                            
+            ],
+            "coalition_table": {
+                "satellite": "sat4",
+                "preferences": [
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    }                    
+                ]            
+            }
+        },
+        {
+            "name": "sat5",
+            "memory_capacity": 3501,
+            "available_memory": 3501,
+            "accumulated_reward": 0,            
+            "availability_matrix": [
+                0,0,0,0,0,0,2,0,
+                0,0,0,0,8,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,10,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,7,0,0,0,
+                0,3,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,9,0,0,0,0,0,0,
+                0,0,0,0,0,0,1,0,
+                0,0,0,0,0,0,0,0           
+            ],
+            "coalition_table": {
+                "satellite": "sat5",
+                "preferences": [
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    }
+                ]            
+            }
+        },
+        {
+            "name": "sat6",
+            "memory_capacity": 2601,
+            "available_memory": 2601,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,7,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                5,0,0,0,0,0,0,0,
+                4,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,3,0,0,8,0,0,
+                0,1,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0                             
+            ],
+            "coalition_table": {
+                "satellite": "sat6",
+                "preferences": [
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 5
+                    }                 
+                ]            
+            }
+        },        
+        {
+            "name": "sat7",
+            "memory_capacity": 2135,
+            "available_memory": 2135,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,9,0,0,0,0,0,0,
+                0,0,0,0,0,0,3,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,5,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,10,0,0,0,0,0,0,
+                0,0,0,0,0,4,0,0                             
+            ],
+            "coalition_table": {
+                "satellite": "sat7",
+                "preferences": [
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 4
+                    }                 
+                ]            
+            }
+        },
+        {
+            "name": "sat8",
+            "memory_capacity": 1342,
+            "available_memory": 1342,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,0,0,0,0,0,7,2,
+                0,0,0,0,0,8,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,4,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,6,0,10,
+                0,0,0,0,0,0,0,0                            
+            ],
+            "coalition_table": {
+                "satellite": "sat8",
+                "preferences": [
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 4,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 6,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 4
+                    }                 
+                ]            
+            }
+        },
+        {
+            "name": "sat9",
+            "memory_capacity": 1006,
+            "available_memory": 1006,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,8,
+                0,0,0,0,0,0,0,0,
+                0,0,0,9,0,0,0,0,
+                10,0,0,0,0,2,0,3,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,5,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,1,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0                            
+            ],
+            "coalition_table": {
+                "satellite": "sat9",
+                "preferences": [
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 1,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 5,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat5"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat10"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    }                 
+                ]            
+            }
+        },
+        {
+            "name": "sat10",
+            "memory_capacity": 3232,
+            "available_memory": 3232,
+            "accumulated_reward": 0,
+            "availability_matrix": [
+                0,0,0,0,2,0,0,0,
+                0,0,0,0,8,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,10,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                7,0,0,0,0,0,0,0,
+                0,0,3,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,9,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0                             
+            ],
+            "coalition_table": {
+                "satellite": "sat10",
+                "preferences": [
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat4"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 2,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 3,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 7,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat1"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat6"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 8,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 9,
+                        "preferred_satellites": [
+                            "sat9"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat7"
+                        ],
+                        "priority": 1
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat2"
+                        ],
+                        "priority": 2
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat3"
+                        ],
+                        "priority": 3
+                    },
+                    {
+                        "task_id": 10,
+                        "preferred_satellites": [
+                            "sat8"
+                        ],
+                        "priority": 4
+                    }                 
+                ]            
+            }
+        }                                        
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "location_index": "1",
+      "time_window": [{"start_time": 14, "end_time": 17}, {"start_time": 21, "end_time": 24}],
+      "reward_points": 533,
+      "memory_required": 954
+    },
+    {
+      "id": 2,
+      "location_index": "2",
+      "time_window": [{"start_time": 1, "end_time": 2}, {"start_time": 9, "end_time": 10}],
+      "reward_points": 402,
+      "memory_required": 473
+    },
+    {
+      "id": 3,
+      "location_index": "3",
+      "time_window": [{"start_time": 9, "end_time": 10}, {"start_time": 14, "end_time": 15}],
+      "reward_points": 791,
+      "memory_required": 793
+    },
+    {
+      "id": 4,
+      "location_index": "4",
+      "time_window": [{"start_time": 9, "end_time": 12}, {"start_time": 21, "end_time": 24}],
+      "reward_points": 545,
+      "memory_required": 160
+    },
+    {
+      "id": 5,
+      "location_index": "5",
+      "time_window": [{"start_time": 7, "end_time": 9}, {"start_time": 13, "end_time": 15}],
+      "reward_points": 749,
+      "memory_required": 570
+    },
+    {
+        "id": 6,
+        "location_index": "6",
+        "time_window": [{"start_time": 9, "end_time": 11}, {"start_time": 21, "end_time": 23}],
+        "reward_points": 768,
+        "memory_required": 1002
+    },
+    {
+        "id": 7,
+        "location_index": "7",
+        "time_window": [{"start_time": 12, "end_time": 14}, {"start_time": 0, "end_time": 2}],
+        "reward_points": 967,
+        "memory_required": 1562
+    },
+    {
+        "id": 8,
+        "location_index": "8",
+        "time_window": [{"start_time": 15, "end_time": 16}, {"start_time": 3, "end_time": 4}],
+        "reward_points": 854,
+        "memory_required": 1234
+    },
+    {
+        "id": 9,
+        "location_index": "9",
+        "time_window": [{"start_time": 18, "end_time": 19}, {"start_time": 6, "end_time": 7}],
+        "reward_points": 677,
+        "memory_required": 1567
+    },
+    {
+        "id": 10,
+        "location_index": "10",
+        "time_window": [{"start_time": 8, "end_time": 9}, {"start_time": 20, "end_time": 22}],
+        "reward_points": 344,
+        "memory_required": 999
+    }      
+  ]
+}
