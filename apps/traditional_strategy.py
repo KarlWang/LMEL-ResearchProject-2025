@@ -43,11 +43,11 @@ import sys
 PRINT_DEBUG = False
 
 class AuctionNegotiator(SAONegotiator):
-    _inv = None  # The ufun invertor (finds outcomes in a utility range)
-    _partner_first = None  # The best offer of the partner (assumed best for it)
-    _min = None  # The minimum of my utility function
-    _max = None  # The maximum of my utility function
-    _best = None  # The best outcome for me
+    _inv = None
+    _partner_first = None
+    _min = None
+    _max = None
+    _best = None
     _sat = None
     _task = None
     _negotiator_type = None
@@ -64,15 +64,20 @@ class AuctionNegotiator(SAONegotiator):
 
     def on_preferences_changed(self, changes):
 
+        # create an initialize an invertor for my ufun
         changes = [_ for _ in changes if _.type not in (PreferencesChangeType.Scale,)]
 
         self._inv = PresortingInverseUtilityFunction(self.ufun)
         self._inv.init()
 
-        worest, self._best = self.ufun.extreme_outcomes()
 
-        self._min, self._max = self.ufun(worest), self.ufun(self._best)
+        # find worst and best outcomes for me
+        worst, self._best = self.ufun.extreme_outcomes()
 
+        # and the corresponding utility values
+        self._min, self._max = self.ufun(worst), self.ufun(self._best)
+
+        # MUST call parent to avoid being called again for no reason
         super().on_preferences_changed(changes)
 
     def respond(self, state, source: str):
@@ -85,7 +90,7 @@ class AuctionNegotiator(SAONegotiator):
             if PRINT_DEBUG:
                 print(f"offer is None, rejecting\n")
             return ResponseType.REJECT_OFFER
-
+        # set the partner's first offer when I receive it
         if not self._partner_first:
             self._partner_first = offer
 
@@ -152,6 +157,7 @@ class AuctionNegotiator(SAONegotiator):
                 print(f"accepting\n")
             return ResponseType.ACCEPT_OFFER
 
+        # accept if the offer is not worse for me than what I would have offered
         if PRINT_DEBUG:
             print(f"accepting\n")
         return super().respond(state, source)
@@ -164,6 +170,7 @@ class AuctionNegotiator(SAONegotiator):
         if self._inv is None:
             return
 
+        # calculate the current aspiration level (utility level at which I will offer and accept)
         a = ((self._max or 0) - (self._min or 0)) * self._asp.utility_at(
             state.relative_time
         ) + (self._min or 0)
@@ -311,7 +318,6 @@ def run_negotiation(cls, satellite, task, plot=False, n_steps=20):
         make_issue(name="price", values=range(0, int(task["memory_required"]) * 2 + 1))
     ]
 
-    # create the mechanism
     session = SAOMechanism(issues=issues, n_steps=n_steps)
 
     seller_utility = LUFun(
@@ -376,7 +382,7 @@ def stage_1_task_distribution(tasks, satellites):
             # Negotiate only with available satellites
             for sate in satellites:
                 # Check if satellite is available for this task
-                stage1_results['availability_checks'] += 1
+                stage1_results['availability_checks'] += 1  # Count availability check
                 if is_satellite_available_for_task(sate, tsk) < 0:
                     print(f"Skipping negotiation with {sate['name']} - not available for Task {task_id}\n")
                     continue
@@ -384,6 +390,7 @@ def stage_1_task_distribution(tasks, satellites):
                 print(f"Negotiation Task{task_id} vs {sate['name']}")
                 s = run_negotiation(AuctionNegotiator, sate, tsk)
 
+                # Track negotiation results
                 negotiation_result = {
                     'task_id': task_id,
                     'satellite': sate['name'],
@@ -392,10 +399,12 @@ def stage_1_task_distribution(tasks, satellites):
                 }
                 stage1_results['negotiation_results'].append(negotiation_result)
 
+                # Check if an agreement was reached
                 if s.state.agreement is not None:
                     agreement_price = s.state.agreement[0]
                     print(f"Agreement reached at price: {agreement_price}")
 
+                    # Update best agreement if this one has a higher price
                     if agreement_price > task_best_agreements[task_id]["price"]:
                         task_best_agreements[task_id] = {
                             "price": agreement_price,
@@ -459,6 +468,7 @@ def stage_2_finding_partner(tasks, satellites, stage1_results):
 
         print(f"\n--- Finding partner for Task {task_id} (Initiator: {assigned_satellite}) ---")
 
+        # Get the task and initiator satellite
         task = next(t for t in tasks if t['id'] == task_id)
         initiator = next(s for s in satellites if s['name'] == assigned_satellite)
 
@@ -529,12 +539,12 @@ def stage_2_finding_partner(tasks, satellites, stage1_results):
     return stage2_results
 
 def main():
-
     if len(sys.argv) < 2:
         print("Usage: python traditional_strategy.py <path_to_json_file>")
         sys.exit(1)
 
     json_file = sys.argv[1]
+    setup_name = os.path.basename(json_file).replace('.json', '')
 
     PRINT_DEBUG = any(flag in sys.argv for flag in ["--debug", "-d"])
 
@@ -583,6 +593,43 @@ def main():
     print(f"Total Tasks: {total_tasks}")
     print(f"Successfully Allocated Tasks: {successful_tasks}")
     print(f"Task Allocation Success Rate: {task_success_rate:.2f}%")
+
+    results_dict = {
+        "setup_name": setup_name,
+        "metrics": {
+            "memory_utilisation": {
+                "total_available": total_available,
+                "total_used": total_used,
+                "average": avg_utilisation
+            },
+            "rewards": {
+                "total": total_reward,
+                "average_per_satellite": avg_reward,
+                "num_satellites": num_satellites
+            },
+            "negotiation": {
+                "total_rounds": total_rounds,
+                "num_negotiations": num_negotiations,
+                "average_rounds": avg_rounds,
+                "success_rate": success_rate,
+                "successful_negotiations": successful_negotiations,
+                "total_negotiations": total_negotiations
+            },
+            "task_allocation": {
+                "success_rate": task_success_rate,
+                "successful_tasks": successful_tasks,
+                "total_tasks": total_tasks
+            }
+        }
+    }
+
+    # Save results to JSON file
+    output_file = f'results/{setup_name}_traditional_results.json'
+    os.makedirs('results', exist_ok=True)
+    with open(output_file, 'w') as f:
+        json.dump(results_dict, f, indent=2)
+
+    print(f"\nResults have been saved to {output_file}")
 
 if __name__ == "__main__":
     main()

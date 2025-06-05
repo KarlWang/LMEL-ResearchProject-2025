@@ -1,0 +1,28 @@
+{
+  "setup_name": "10t10s",
+  "metrics": {
+    "memory_utilisation": {
+      "total_available": 21316,
+      "total_used": 12813,
+      "average": 60.10977669356352
+    },
+    "rewards": {
+      "total": 545,
+      "average_per_satellite": 54.5,
+      "num_satellites": 10
+    },
+    "negotiation": {
+      "total_rounds": 601,
+      "num_negotiations": 43,
+      "average_rounds": 13.976744186046512,
+      "success_rate": 14.333333333333334,
+      "successful_negotiations": 43,
+      "total_negotiations": 300
+    },
+    "task_allocation": {
+      "success_rate": 10.0,
+      "successful_tasks": 1,
+      "total_tasks": 10
+    }
+  }
+}

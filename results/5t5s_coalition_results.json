@@ -1,0 +1,28 @@
+{
+  "setup_name": "5t5s",
+  "metrics": {
+    "memory_utilisation": {
+      "total_available": 11000,
+      "total_used": 2950,
+      "average": 26.81818181818182
+    },
+    "rewards": {
+      "total": 3020,
+      "average_per_satellite": 604.0,
+      "num_satellites": 5
+    },
+    "negotiation": {
+      "total_rounds": 100,
+      "num_negotiations": 5,
+      "average_rounds": 20.0,
+      "success_rate": 100.0,
+      "successful_negotiations": 5,
+      "total_negotiations": 5
+    },
+    "task_allocation": {
+      "success_rate": 100.0,
+      "successful_tasks": 5,
+      "total_tasks": 5
+    }
+  }
+}

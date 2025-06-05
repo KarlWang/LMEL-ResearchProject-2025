@@ -1,0 +1,28 @@
+{
+  "setup_name": "20t20s",
+  "metrics": {
+    "memory_utilisation": {
+      "total_available": 33861,
+      "total_used": 19805,
+      "average": 58.48911727355956
+    },
+    "rewards": {
+      "total": 533,
+      "average_per_satellite": 26.65,
+      "num_satellites": 20
+    },
+    "negotiation": {
+      "total_rounds": 1053,
+      "num_negotiations": 75,
+      "average_rounds": 14.04,
+      "success_rate": 7.9787234042553195,
+      "successful_negotiations": 75,
+      "total_negotiations": 940
+    },
+    "task_allocation": {
+      "success_rate": 5.0,
+      "successful_tasks": 1,
+      "total_tasks": 20
+    }
+  }
+}

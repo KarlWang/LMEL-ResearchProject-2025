@@ -149,15 +149,14 @@ def run_negotiations(negotiator_version, satellites, tasks, plot=False, n_steps=
     }
 
 def main():
-
     if len(sys.argv) < 2:
         print("Usage: python coalition_strategy.py <path_to_json_file>")
         sys.exit(1)
 
     json_file = sys.argv[1]
+    setup_name = os.path.basename(json_file).replace('.json', '')
 
     PRINT_DEBUG = any(flag in sys.argv for flag in ["--debug", "-d"])
-
     with open(json_file, 'r') as file:
         data = json.load(file)
 
@@ -174,7 +173,7 @@ def main():
 
     results = run_negotiations("v05", satellites, tasks)
 
-    # Calculate and display memory utilisation metrics
+    # Calculate and display memory utilization metrics
     avg_utilisation, total_used, total_available = calculate_average_memory_utilisation(satellites)
     print("\n--- Memory Utilisation Metrics ---")
     print(f"Total Memory Available: {total_available}")
@@ -206,11 +205,47 @@ def main():
     total_tasks = len(tasks)
     successful_tasks = len(results['allocated_tasks'])
     task_success_rate = (successful_tasks / total_tasks) * 100 if total_tasks > 0 else 0
-
     print("\n--- Task Allocation Success Rate Metrics ---")
     print(f"Total Tasks: {total_tasks}")
     print(f"Successfully Allocated Tasks: {successful_tasks}")
     print(f"Task Allocation Success Rate: {task_success_rate:.2f}%")
+
+    results_dict = {
+        "setup_name": setup_name,
+        "metrics": {
+            "memory_utilisation": {
+                "total_available": total_available,
+                "total_used": total_used,
+                "average": avg_utilisation
+            },
+            "rewards": {
+                "total": total_reward,
+                "average_per_satellite": avg_reward,
+                "num_satellites": num_satellites
+            },
+            "negotiation": {
+                "total_rounds": total_rounds,
+                "num_negotiations": num_negotiations,
+                "average_rounds": avg_rounds,
+                "success_rate": success_rate,
+                "successful_negotiations": successful_negotiations,
+                "total_negotiations": total_negotiations
+            },
+            "task_allocation": {
+                "success_rate": task_success_rate,
+                "successful_tasks": successful_tasks,
+                "total_tasks": total_tasks
+            }
+        }
+    }
+
+    # Save results to JSON file
+    output_file = f'results/{setup_name}_coalition_results.json'
+    os.makedirs('results', exist_ok=True)
+    with open(output_file, 'w') as f:
+        json.dump(results_dict, f, indent=2)
+
+    print(f"\nResults have been saved to {output_file}")
 
 if __name__ == "__main__":
     main()
