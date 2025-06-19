@@ -34,4 +34,71 @@ LMEL-ResearchProject-2025$ python apps/plot_results.py
 
 ### Run the front-end tool
 
+Please follow these steps to run the front-end tool:
+
+1. Start the FastAPI server
+```
+$ python apps/api.py
+```
+
+2. Open another terminal, run the following commands:
+```
+cd front-end
+
+# Install Node.js dependencies (only needed for the first time)
+npm install
+
+# Start the React development server
+npm start
+```
+
+The default browser should launch the front-end tool page automatically. If it doesn't do that for you, please visit http://localhost:3000 from your local machine.
+
 ### Add a new negotiator
+
+1. Create a new Python file in the MultiSatellitesNego/negotiators/ directory. For example, **v06.py**
+2. Use **v05.py** as the template for **v06.py**. For example, something like this:
+
+```python
+"""
+Version 0.6 of the satellite negotiator.
+
+Author: Your Name
+Email: your.email@example.com
+Date created: DD/MM/YYYY
+"""
+from negmas import (
+    SAONegotiator, 
+    ResponseType, 
+    Outcome, 
+    SAOState,
+    make_issue
+)
+from negmas.preferences import LinearAdditiveUtilityFunction, IdentityFun
+from .base import BaseNegotiator
+
+class NegotiatorV06(BaseNegotiator):
+    """
+    Version 0.6 of the satellite negotiator.
+    Add your description here.
+    """
+......
+```
+
+3. Edit the **MultiSatellitesNego/negotiators/__ init __.py** file to add your new negotiator:
+```
+# Add this import at the top with other imports
+from .v06 import NegotiatorV06
+
+# Add your negotiator to the registry
+NEGOTIATOR_REGISTRY = {
+    "v02": NegotiatorV02,
+    "v03": NegotiatorV03,
+    "v031": NegotiatorV03_1,
+    "v04": NegotiatorV04,
+    "v041": NegotiatorV04_1,
+    "v05": NegotiatorV05,
+    "v06": NegotiatorV06,  # Add your new negotiator here
+    "random": RandomNegotiator
+}
+```
