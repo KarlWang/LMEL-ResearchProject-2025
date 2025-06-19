@@ -102,3 +102,33 @@ NEGOTIATOR_REGISTRY = {
     "random": RandomNegotiator
 }
 ```
+
+### Tools
+
+#### Coverage table viewer
+
+`$ python tools/coverage_table.py saved_data/20t20s.json `
+
+#### Availability matrix generator
+
+1. Update the `assignments` in **availability_matrix.py** to suit your needs.
+2. Run the following comand:
+
+`$ python tools/availability_matrix.py saved_data/20t20s.json`
+
+#### Coalition table generator
+
+For example: generate the coalition table for "sat10" in the setup of "5t10s":
+
+`$ python tools/coalition_table_generator.py saved_data/5t10s.json sat10`
+
+#### Satellite time window availability checker:
+
+`$ python tools/time_window_coverage.py saved_data/5t5s.json`
+
+#### Availability matrix interpreter
+
+1. Update the `availability_matrix` of `sat` in **availability_matrix_interpret.py** to the availability matrix you want to interpret.
+2. Run the following command:
+
+`$ python tools/availability_matrix_interpret.py`
