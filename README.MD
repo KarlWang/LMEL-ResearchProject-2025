@@ -103,6 +103,20 @@ NEGOTIATOR_REGISTRY = {
 }
 ```
 
+4. Test the negotiator
+
+Use **nego_app.py** to test the negotiator. Its usage is as below:
+
+```
+usage: nego_app.py [-h] --negotiator {v02,v03,v031,v04,v041,v05,v06,random} --satellites SATELLITES --tasks TASKS
+                   [--steps STEPS] [--plot]
+```
+The arguments `--negotiator/-n`, `--satellites/-s`, `--tasks/-t` are required. For example, use v06 negotiator, with 5 satellites and 10 tasks, maximum 25 steps for one negotiation:
+
+```
+$ python apps/nego_app.py -n v06 -s 5 -t 10 --steps 25
+```
+
 ### Tools
 
 #### Coverage table viewer
