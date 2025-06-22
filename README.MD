@@ -2,6 +2,10 @@
 
 This repo hosts the code for the LMEL Research Project (UniSA, 2025): **Dynamic Task Allocation for Multi-satellite System with Automated Negotiation via Basilisk**.
 
+What we found through this research project can be summarized as follow:
+
+> Collaboration through open information benefits everyone involved.
+
 ## Instructions
 
 ### Run the experiments
@@ -68,9 +72,9 @@ Email: your.email@example.com
 Date created: DD/MM/YYYY
 """
 from negmas import (
-    SAONegotiator, 
-    ResponseType, 
-    Outcome, 
+    SAONegotiator,
+    ResponseType,
+    Outcome,
     SAOState,
     make_issue
 )
